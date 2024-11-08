@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1>ÍNDICE DE MASSA CORPORAL</h1>
+    <nav>
+        <ul>
+            <a href="#inicio">
+                <li>ÌNICIO</li>
+            </a>
+            <a href="#calculadora">
+                <li>CALCULAR</li>
+            </a>
+            <a href="#conclusão">
+                <li>CONCLUSÂO</li>
+            </a>
+
+
+
+        </ul>
+    </nav>
+</header>
+<section id="introdução">
+    <div class="container">
+        <p class="intro">O Índice de Massa Corporal (IMC) é uma fórmula usada para estimar se uma pessoa tem um peso
+            adequado em relação à sua altura. Ele é amplamente utilizado como uma ferramenta simples e acessível para
+            avaliar o estado nutricional e ajudar a identificar se uma pessoa está dentro de uma faixa de peso saudável,
+            com base em um número obtido através de uma fórmula matemática.</p>
+    </div>
+</section>
+<section id="calculadora">
+    <div class="calc">
+        <label for="altura">Altura</label>
+        <input type="number" name="altura" id="altura">
+
+        <label for="peso">Peso (kg)</label>
+        <input type="number" name="peso" id="peso">
+
+        <button onclick="calcImc()">Calcular IMC</button>
+        <p>Seu índice de massa corporal é: <span id="resultado"></span></p>
+    </div>
+
+    <section id="conclusão">
+        <div class="container2">
+            <p class="conclu">
+                O IMC é uma ferramenta simples e prática para avaliar o peso de uma pessoa de forma geral, mas não substitui uma avaliação mais detalhada que leve em consideração outros aspectos da saúde, como a composição corporal e o histórico médico. Para uma avaliação mais completa, é importante consultar um profissional de saúde.
+
+
+
+                <pre>OBSERVAÇÃO: ISSO NAO VALE PARA VIDA, SE QUISER CONSULTAR SUA IMC, PROCURE UM PROFISSIONAL</pre>
+            </p>
+        </div>
+    </section>
+</section>
+<footer>
+    <p>Todos os direitos Reservados - 2024 &copy;</p>
+</footer>
+
+<script>
+    function calcImc() {
+        const altura = document.getElementById("altura").value;
+        const peso = document.getElementById("peso").value;
+        const resultado = peso / (altura ** 2);
+
+        document.getElementById("resultado").textContent = resultado.toFixed(2);
+    }
+</script>
+
+<body>
+
+</body>
+
+</html>

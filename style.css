@@ -1,0 +1,97 @@
+body{
+    text-align: center;
+    
+}
+header{
+    background-color: #57e793;
+    width: 97.2vw;
+    margin-left:-8px;
+    padding: 20px;
+    margin-top: -19px;
+}
+h1{
+    font-family: sans-serif;
+    font-size: 2.5em;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 2px #615c5cc4;
+}
+a{
+    text-decoration: none;
+}
+li{
+    color: rgba(2, 2, 2, 0.555);
+    font-size: 18px;
+    font-family: sans-serif;
+    /* text-shadow: 2px 2px 2px #615c5cc4; */
+}
+li:hover{
+    color: rgba(106, 141, 206, 0.829);
+    font-size: 24px;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+.container{
+    width: 80%;
+    line-height: 1.5;
+    padding: 15px;
+    margin: auto;
+}
+
+.intro{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+.calc{
+    border: 3px black solid;
+    width: 190px;
+    margin-left: 40%;
+    padding: 40.5px;
+    background-color: #57e793;
+    border-radius: 10px;
+    line-height: 2;
+
+}
+button{
+    margin-top: 15px;
+    padding: 8px;
+    background-color: #28db73;
+    border: 1px black solid;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button:hover{
+    background-color: #00ff00;
+}
+
+input{
+    padding: 7px ;
+    font-size: 15px;
+}
+.container2{
+    width: 80%;
+    line-height: 1.5;
+    padding: 15px;
+    margin: auto;
+}
+
+.conclu{
+    font-family: sans-serif;
+    font-size: 19px;
+}
+
+footer{
+    background-color: #57e793 ;
+    position: absolute;
+    margin-top: 10px;
+    width: 100vw;
+    margin-left:-8px;
+    font-size: 19px;
+
+}
